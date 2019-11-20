@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Click & Go - ShoppingCart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Parth Patel - Team 3" />
+	<meta name="description" content="An easy-to-use e-commerce website for BU students" />
+	<!-- Links css to the HTML -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="homepage.css" type="text/css" />
+	<link rel="stylesheet" href="shoppingCart.css" type="text/css" />
+	
+	
+	
+	</head>
+	<body>
+		<div class="header">
+			<img src="Logo_File.png" alt="go" class="go"/>
+			<h1>CLICK & GO!</h1>
+			<p> An <b>e-commerce</b> webiste for college students.</p>
+		</div>
+
+		<div class="navbar">
+			<a href="homepage.html" >Home</a>
+			<div class="dropdown">
+				<button class="productbutton">Products <i class="fa fa-caret-down"></i></button>
+				<div class="products-content">
+					<a href="apparel.html">Apparel</a>
+					<a href="stationary.html">Stationary</a>
+					<a href="dormSupplies.html">Dorm Supplies</a>
+				</div>
+			</div>
+			<a href="#" class="active">Shopping Cart</a>
+			<a href="HelpPage.html">Help</a>
+			<a href="contactUs.html">Contact Us</a>
+			<a href="login.html" class="right">Login/Register</a>
+		</div>
+		
+		<div id ="about">
+            <h2> Review your Order </h2>
+
+			<table id="myTable">
+				<tr>
+					<th>Item</th>
+					<th id="border">Price</th>
+				</tr>
+				<tr>
+					<td>BU Hoddie</td>
+					<td>15.00</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Nike Cap</td>
+					<td>10.99</td>
+					<td><button  id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU T-shirt</td>
+					<td>30.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Binder</td>
+					<td>8.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Pen</td>
+					<td>5.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Notebook</td>
+					<td>3.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>Blanket</td>
+					<td>50.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Trash-Can</td>
+					<td>11.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>BU Pillow</td>
+					<td>12.99</td>
+					<td><button id="remove" onClick="myFunction(this)">Remove</button></td>
+				</tr>
+				<tr>
+					<td>Water-Bottle</td>
+					<td>10.99</td>
+					<td><button  id="remove"onClick="myFunction(this)">Remove</button></td>
+				</tr>
+			</table>
+
+			<br>
+			<div>
+				<span>
+						<b>Subtotal:</b> <input type ="text" id="val"/>
+				</span>	
+				
+				<span>
+					<button id="checkout"> CheckOut</button>
+				</span>
+			</div>
+        </div>
+
+		<script>
+
+			updateSubTotal();
+
+			function updateSubTotal(){
+				var table = document.getElementById("myTable");
+				let subTotal = Array.from(table.rows).slice(1).reduce((total,row) =>{
+					return total + parseFloat(row.cells[1].innerHTML);
+				}, 0);
+				document.getElementById("val").value = "$" + subTotal.toFixed(2);
+			}
+
+			function myFunction(deleteButton){
+				let row = deleteButton.parentElement.parentElement;
+				row.parentNode.removeChild(row);
+				updateSubTotal();
+	
+			}
+			
+		</script>
+
+		<div id="footer">
+			<p>
+				Team 3 <br>
+				Boston University CS-633
+			</p>
+		</div>
+</body>
+</html>
