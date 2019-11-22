@@ -34,3 +34,127 @@ th, td{
   width: 100px;
   border: 2px solid black;
 }
+
+.logo {
+  width: 10%;
+  border-radius: 50%;
+  margin-top: 1%;
+  border: 1px solid black; 
+  margin-right: 750px;
+}
+
+.image{
+  width: 90%;
+}
+
+.modal{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 480px;
+  top: 20px;
+  width: 800px;
+  height: 900px;
+  overflow: auto;
+  background-color: lightgray;
+  padding-top: 50px;
+  border: 2px solid black;
+  
+}
+
+hr{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.container{
+  padding: 5px 20px 15px 20px;
+  font-size: 18px;
+  float: left;
+
+}
+
+input[type=text] {
+  width: 20%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+.close{
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+
+.close:hover, .close:focus{
+  color: darkred;
+  cursor: pointer; 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
