@@ -1,5 +1,5 @@
 *{
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -7,33 +7,34 @@ body{
     width: 1500px;
     line-height: 1.5em;
     margin: 0 auto;
-    background-color: lightskyblue;
-    /*background-image: url("save_money_logo.jpg");*/
+    background-color: black;
 }
 
 .header{
     padding: 30px;
-    background: rgb(250, 98, 98);
+    background: rgb(153, 0, 10);
     color: white;
     
 }
 
 .header img.go {
   float: left;
-  width: 10%;
-  margin-top: -15px;
+  width: 9%;
+  margin-top: -10px;
+  margin-right: 10px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 0px solid black;
 }
-.header span.h1{
-  font-size: 40px;
-  text-align:center;
+.header h1{
+  font-size: 30px;
+  text-align:left;
+  
 }
 
 
 .navbar{
     overflow: hidden;
-    background-color: black;
+    background-color: #202020;
     
 }
 
@@ -56,7 +57,7 @@ body{
 
 /* Active/current link */
 .navbar a.active {
-    background-color: red;
+    background-color: #4D0000;
     color: white;
 }
 
@@ -79,7 +80,7 @@ body{
 }
 /* Change color on hover */
 .navbar a:hover, .dropdown:hover .productbutton, .productbutton:focus{
-  background-color: red;
+  background-color: rgb(153, 0, 10);
 }
 
 .products-content{
@@ -103,7 +104,7 @@ body{
 }
 
 .products-content a:hover{
-  background-color: red;
+  background-color: rgb(153, 0, 10);
 }
 .dropdown:hover .products-content{
   display: block;
@@ -127,7 +128,7 @@ body{
     float: left;
     width: 350px;
     height: 450px;
-    background: white;
+    background: whitesmoke;
     padding: 20px;
     padding-top: 5px;
     font-size: 17px;
@@ -149,10 +150,10 @@ body{
 
 #apparel_Page_Button{
   height: 20px;
-  width: 160px;
+  width: 180px;
   margin-top: 35px;
   margin-left: 80px;
-  background-color: red;
+  background-color:rgb(128,128,128);
   text-align: center;
   color: white;
   padding: 16px;
@@ -163,7 +164,7 @@ body{
     float: left;
     width: 350px;
     height: 450px;
-    background: white;
+    background: whitesmoke;
     padding: 20px;
     padding-top: 5px;
     font-size: 17px;
@@ -182,10 +183,10 @@ body{
 
 #stationary_Page_Button{
   height: 20px;
-  width: 160px;
+  width: 180px;
   margin-top: 50px;
   margin-left: 80px;
-  background-color: red;
+  background-color: rgb(128,128,128);
   text-align: center;
   color: white;
   padding: 16px;
@@ -196,7 +197,7 @@ body{
     float: left;
     width: 350px;
     height: 450px;
-    background: white;
+    background: whitesmoke;
     padding: 20px;
     padding-top: 5px;
     font-size: 17px;
@@ -215,10 +216,10 @@ body{
 
 #dormSupplies_Page_Button{
   height: 20px;
-  width: 160px;
+  width: 180px;
   margin-top: 50px;
   margin-left: 80px;
-  background-color: red;
+  background-color: rgb(128,128,128);
   text-align: center;
   color: white;
   padding: 16px;
@@ -235,7 +236,7 @@ body{
   text-align: right;
   text-transform: uppercase;
   font-size: 80%;
-  color: red;
+  color: white;
   font-style: bold;
 }
 
