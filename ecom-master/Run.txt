@@ -16,9 +16,10 @@ Use command "python3 manage.py createsuperuser". Creates a Superuser and gives y
 Use the commands to make migrations:
 "Python3 manage.py makemigrations"
 "python3 migrate"
+
 You can go ahead and use "python3 manage.py runserver" command to run a local server on your device.
 
-The page is also hosted on the internet, use the Ip : "54.167.39.79:7721" to look at the webpage.
+**The page is also hosted on the internet, use the Ip : "54.167.39.79:7721" to look at the webpage.
 
 
 
