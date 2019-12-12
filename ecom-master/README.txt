@@ -18,7 +18,7 @@ Use the commands to make migrations:
 "python3 migrate"
 You can go ahead and use "python3 manage.py runserver" command to run a local server on your device.
 
-The page is also hosted on the internet, use the Ip : "54.167.39.79:4000" to look at the webpage.
+The page is also hosted on the internet, use the Ip : "54.167.39.79:7721" to look at the webpage.
 
 
 
