@@ -13,6 +13,9 @@ Install Django framework. "Pip install Django"
 Change directory ecom-master using "cd" command.
 
 Use command "python3 manage.py createsuperuser". Creates a Superuser and gives you the adminstrator control. Creates "localhost:8000".
+
+You can head to "localhost:8000/admin" to view the administrator profile created using the superuser command.
+
 Use the commands to make migrations:
 "Python3 manage.py makemigrations"
 "python3 migrate"
