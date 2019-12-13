@@ -1,4 +1,4 @@
-Directions to RUN the project:
+# Directions to RUN the project: #
 
 How to run the project on the a Local Host:
 
