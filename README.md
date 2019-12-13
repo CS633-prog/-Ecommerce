@@ -1,4 +1,4 @@
-#Ecommerce Project: Click&GO. 
+# Ecommerce Project: Click&GO.com #
 
 Click&go is a website that consists of school supplies like Stationary, Dorm essentials, books and apparel. The site was designed in Python using the web framework named 'DJANGO'.We currently built a first iteration which allows you to access the website as an administrator and also create a user account.
 
